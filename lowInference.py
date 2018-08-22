@@ -19,7 +19,7 @@ def takeNotes():
 			time_delta = note_time - last_time
 			minutes, seconds = divmod(int(time_delta.total_seconds()),60)
 
-			col1 = note_time.strftime("%H:%M:%S")
+			col1 = note_time.strftime("%I:%M:%S")
 			col2 = f'00:{minutes:02d}:{seconds:02d}'
 			col3 = note
 			f.write(f'{col1},{col2},{col3}\n')
